@@ -1,6 +1,8 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "wruxsd",
+  
   e2e: {
     defaultCommandTimeout: 10000,
     watchForFileChanges: false,
