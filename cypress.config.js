@@ -7,10 +7,10 @@ module.exports = defineConfig({
     video: false,
     viewportWidth: 1200,
     viewportHeight: 800,
-    baseUrl: "https://naveenautomationlabs.com/opencart/index.php?route=common/home",
+    baseUrl: "https://naveenautomationlabs.com",
     env: {
-      email : '',
-      password: '',
+      email : 'carlosvela@gmail.com',
+      password: '12345',
     },
 
     setupNodeEvents(on, config) {
