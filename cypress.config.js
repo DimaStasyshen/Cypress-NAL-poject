@@ -6,7 +6,7 @@ module.exports = defineConfig({
   e2e: {
     defaultCommandTimeout: 10000,
     watchForFileChanges: false,
-    video: false,
+    video: true,
     viewportWidth: 1200,
     viewportHeight: 800,
     baseUrl: "https://naveenautomationlabs.com",
