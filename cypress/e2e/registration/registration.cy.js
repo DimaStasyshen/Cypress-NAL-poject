@@ -7,7 +7,7 @@ let userData = generateUserData();
 
 describe("Registration", () => {
   beforeEach(() => {
-    cy.visit("/opencart/index.php?route=account/register");  
+    cy.visit("index.php?route=account/register");  
   });
 
   it("Should register new user", () => {

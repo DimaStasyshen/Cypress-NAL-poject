@@ -3,8 +3,8 @@ class header {
    get logoutButton() { return cy.contains("Logout") };   
 
    logout() {
-     this.myAccountButton.click();
-     this.logoutButton.click();
+       this.myAccountButton.click();
+       this.logoutButton.click();
  }
 }
 
