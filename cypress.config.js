@@ -9,10 +9,10 @@ module.exports = defineConfig({
     watchForFileChanges: false,
     viewportWidth: 1200,
     viewportHeight: 800,
-    baseUrl: "https://naveenautomationlabs.com",
+    baseUrl: "https://naveenautomationlabs.com/opencart/",
     env: {
-      email : 'carlosvela@gmail.com',
-      password: '12345',
+      userEmail : "carlosvela@gmail.com",
+      userPassword: "12345",
     },
     reporter: "cypress-mochawesome-reporter",
     reporterOptions: {
