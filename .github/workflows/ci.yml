@@ -11,12 +11,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          record: true
-
-      - name: Cypress run
-        uses: cypress-io/github-action@v4 # use the explicit version number
-        with:
           command: npm run ui-regression
+          record: true
 
       - name: Uploading artifact
         uses: actions/upload-artifact@v2
@@ -36,5 +32,4 @@ jobs:
           SLACK_USERNAME: Dima S
           SLACK_TITLE: Regression Test
           SLACK_MESSAGE: "Slack notification:test result:${{ job.status }}"
-          SLACK_COLOR: ${{ job.status }}
-          
+          SLACK_COLOR: ${{ job.status }}     
