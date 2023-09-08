@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "ui-regression": "cypress run - - browser chrome - -spec cypress/e2e/registration/**.js"
+    "ui-regression": "cypress run --spec cypress/e2e/registration/**.js --browser chrome",
+    "html-reports": "cypress run --spec cypress/e2e/registration/registration.cy.js --browser chrome --headed",
+    "ui-regression:chrome": "cypress run --spec cypress/e2e/registration/**.js --browser chrome",
+    "ui-regression:electron": "cypress run --spec cypress/e2e/registration/**.js --browser electron"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +15,8 @@
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
     "cypress": "^13.1.0",
-    "faker": "^6.6.6"
+    "cypress-mochawesome-reporter": "^3.5.1",
+    "faker": "^6.6.6",
+    "mochawesome": "^7.1.3"
   }
 }
