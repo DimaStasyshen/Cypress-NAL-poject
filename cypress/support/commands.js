@@ -10,7 +10,26 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
+Cypress.Commands.add(
+  "userLogin",
+  (
+    userEmail = Cypress.env("userEmail"),
+    userPassword = Cypress.env("userPassword")
+  ) => {
+    cy.request(
+      "POST",
+      "https://naveenautomationlabs.com/opencart/index.php?route=account/login",
+      {
+        email: userEmail,
+        password: userPassword,
+      }
+    ).then((response) => {
+        window.localStorage.setItem("token", response.body.token);
+        cy.log(response)
+    });
+  }
+);
+
 //
 //
 // -- This is a child command --
